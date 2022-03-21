@@ -2,7 +2,7 @@
 layout: 'post'
 title: Ribonuclease
 date: 2022-03-21 04:09:00 +0000
-preview: "/uploads/ribonuclease.png"
+preview: "/assets/img/ribonuclease.png"
 
 ---
 **Ribonuclease** (commonly abbreviated **RNase**) is a type of [nuclease](https://en.wikipedia.org/wiki/Nuclease "Nuclease") that [catalyzes](https://en.wikipedia.org/wiki/Catalysis "Catalysis") the degradation of [RNA](https://en.wikipedia.org/wiki/RNA "RNA") into smaller components. Ribonucleases can be divided into [endoribonucleases](https://en.wikipedia.org/wiki/Endoribonuclease "Endoribonuclease") and [exoribonucleases](https://en.wikipedia.org/wiki/Exoribonuclease "Exoribonuclease"), and comprise several sub-classes within the EC 2.7 (for the phosphorolytic enzymes) and 3.1 (for the hydrolytic enzymes) classes of enzymes.
