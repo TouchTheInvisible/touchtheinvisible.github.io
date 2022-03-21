@@ -1,0 +1,20 @@
+---
+layout: ''
+title: Ribonuclease
+date: 2022-03-21 04:09:00 +0000
+preview: "/uploads/ribonuclease.png"
+
+---
+**Ribonuclease** (commonly abbreviated **RNase**) is a type of [nuclease](https://en.wikipedia.org/wiki/Nuclease "Nuclease") that [catalyzes](https://en.wikipedia.org/wiki/Catalysis "Catalysis") the degradation of [RNA](https://en.wikipedia.org/wiki/RNA "RNA") into smaller components. Ribonucleases can be divided into [endoribonucleases](https://en.wikipedia.org/wiki/Endoribonuclease "Endoribonuclease") and [exoribonucleases](https://en.wikipedia.org/wiki/Exoribonuclease "Exoribonuclease"), and comprise several sub-classes within the EC 2.7 (for the phosphorolytic enzymes) and 3.1 (for the hydrolytic enzymes) classes of enzymes.
+
+## Function
+
+All organisms studied contain many RNases of two different classes, showing that RNA degradation is a very ancient and important process. As well as clearing of cellular RNA that is no longer required, RNases play key roles in the maturation of all RNA molecules, both messenger RNAs that carry genetic material for making proteins and non-coding RNAs that function in varied cellular processes. In addition, active RNA degradation systems are the first defense against RNA viruses and provide the underlying machinery for more advanced cellular immune strategies such as [RNAi](https://en.wikipedia.org/wiki/RNAi "RNAi").
+
+Some cells also secrete copious quantities of non-specific RNases such as A and T1. RNases are, therefore, extremely common, resulting in very short lifespans for any RNA that is not in a protected environment. It is worth noting that all intracellular RNAs are protected from RNase activity by a number of strategies including [5' end capping](https://en.wikipedia.org/wiki/5%27_cap "5' cap"), 3' end [polyadenylation](https://en.wikipedia.org/wiki/Polyadenylation "Polyadenylation"), formation of an RNA·RNA duplex, and folding within an RNA protein complex ([ribonucleoprotein](https://en.wikipedia.org/wiki/Ribonucleoprotein "Ribonucleoprotein") particle or RNP).
+
+Another mechanism of protection is [**ribonuclease inhibitor**](https://en.wikipedia.org/wiki/Ribonuclease_inhibitor "Ribonuclease inhibitor") **(RI)**, which comprises a relatively large fraction of cellular protein (\~0.1%) in some cell types, and which binds to certain ribonucleases with the highest affinity of any [protein-protein interaction](https://en.wikipedia.org/wiki/Protein-protein_interaction "Protein-protein interaction"); the [dissociation constant](https://en.wikipedia.org/wiki/Dissociation_constant) for the RI-RNase A complex is \~20 fM under physiological conditions. RI is used in most laboratories that study RNA to protect their samples against degradation from environmental RNases.
+
+Similar to [restriction enzymes](https://en.wikipedia.org/wiki/Restriction_enzyme "Restriction enzyme"), which cleave highly specific sequences of double-stranded [DNA](https://en.wikipedia.org/wiki/DNA "DNA"), a variety of [endoribonucleases](https://en.wikipedia.org/wiki/Endoribonuclease "Endoribonuclease") that recognize and cleave specific sequences of single-stranded RNA have been recently classified.
+
+RNases play a critical role in many biological processes, including [angiogenesis](https://en.wikipedia.org/wiki/Angiogenesis "Angiogenesis") and [self-incompatibility](https://en.wikipedia.org/wiki/Self-incompatibility "Self-incompatibility") in [flowering plants](https://en.wikipedia.org/wiki/Flowering_plant "Flowering plant") (angiosperms).[\[2\]](https://en.wikipedia.org/wiki/Ribonuclease#cite_note-SpornRoberts2012-2)[\[3\]](https://en.wikipedia.org/wiki/Ribonuclease#cite_note-Raghavan2012-3) Many stress-response toxins of prokaryotic [toxin-antitoxin systems](https://en.wikipedia.org/wiki/Toxin-antitoxin_system "Toxin-antitoxin system") have been shown to have RNase activity and [homology](https://en.wikipedia.org/wiki/Homology_(biology) "Homology (biology)").[\[4\]](https://en.wikipedia.org/wiki/Ribonuclease#cite_note-RosenbergRamage2009-4)
