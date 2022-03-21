@@ -87,7 +87,7 @@ p {
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     width: 100%;
-    background: url(../img/bg_header.png) no-repeat center center #003594;
+    background: url(../assets/img/bg_header.png) no-repeat center center #003594;
     background-size: auto;
     background-size: cover;
     display: inline-block;
