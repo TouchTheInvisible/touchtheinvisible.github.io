@@ -1,5 +1,4 @@
-# urban-theme
+# Touch The Invisible
 
-This theme is a Jekyll port of http://erosie.net/ with some modifications. It is designed for visual artists.
-
-Live-Demo: https://narkotyk.netlify.app
+## Abstract
+Most introductory biology classes are tailored toward visual and auditory learners, leaving kinesthetic learners behind. By developing physical, 3D printed models of various biological macromolecules, this project aims to bridge the gap between learning styles. Utilizing x-ray crystallographic data from the Protein Data Bank (PDB) and special software to manipulate the structures, this project has produced multiple models ranging from gramicidin to phosphofructokinase, many of which have already been introduced into several classes at the University of Pittsburgh. In addition, this project also involves researching the molecules which are modeled, then producing supplementary material to aid students in learning outside of the classroom. So far, approximately 20 molecules have been modeled and developed, but more are currently in the works. Eventually, we hope to build an extensive library of models and supplementary models that can be expanded to more classes and more universities.
