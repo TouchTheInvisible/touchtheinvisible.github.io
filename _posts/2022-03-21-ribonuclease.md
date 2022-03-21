@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: 'post'
 title: Ribonuclease
 date: 2022-03-21 04:09:00 +0000
 preview: "/uploads/ribonuclease.png"
