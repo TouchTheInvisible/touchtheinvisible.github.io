@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Placeholder"
+title:  "Aquaporin"
 date:   2015-10-07 15:39:40
-preview: holder.js/300x300?auto=yes
+preview: assets/img/4NEF-Aquaporin/4NEF-AquaporinTetramer_Ribbon.png
 ---
 
 ![Picture 1](holder.js/800x600?auto=yes)
