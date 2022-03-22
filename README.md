@@ -82,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](touchtheinvisible.github.io)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `TouchTheInvisible`, `TouchTheInvisible.github.io`, `twitter_handle`, `kimshinwoo`, `shinwookim@pitt.edu_client`, `shinwookim@pitt.edu`, `Touch the Invisible`, `A University of Pittsburgh Project`
 
