@@ -7,7 +7,8 @@ layout: default
   </header>  
   <article class="post-content">
     <div id="viewerFrame" onload="myFunction()"></div>
-    {{ content }}    
+    {{ content }}
+    
     <script>
         document.onload(modelSelector('{{ page.modelfile }}'));
         function modelSelector(str) {
@@ -15,17 +16,20 @@ layout: default
           link += str;
           let front = ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
           let back = '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
-          let poweredBy ='<p>Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
-          let ctrlHelp = '<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="alpha">Click to toggle popover</button>'
+          let poweredBy ='<p class="mb-0">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
+          let ctrlHelp = '<button type="button" data-bs-toggle="popover" data-bs-placement="left" title="Control Tips" data-bs-content="Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan">Toggle Tool Tips</button>'
           document.getElementById("viewerFrame").innerHTML = front + link + back + poweredBy + ctrlHelp;
-          window.location.href = "#modelViewer";
         }
+
     </script>
     <script>
-      $(function () {
-        $('[data-toggle="popover"]').popover()
-      })
-    </script>   
+      document.addEventListener("DOMContentLoaded", function(){
+          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+          var popoverList = popoverTriggerList.map(function(element){
+              return new bootstrap.Popover(element);
+          });
+      });
+      </script>  
   </article> 
   <div class="post-nav">
     {% if page.next.url %}
