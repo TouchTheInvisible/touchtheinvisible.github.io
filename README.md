@@ -33,10 +33,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Touch the Invisible</h3>
 
   <p align="center">
-    project_description
+    A University of Pittsburgh Project
     <br />
     <a href="https://github.com/TouchTheInvisible/TouchTheInvisible.github.io"><strong>Explore the docs »</strong></a>
     <br />
@@ -84,20 +84,15 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `TouchTheInvisible`, `TouchTheInvisible.github.io`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `TouchTheInvisible`, `TouchTheInvisible.github.io`, `twitter_handle`, `kimshinwoo`, `shinwookim@pitt.edu_client`, `shinwookim@pitt.edu`, `Touch the Invisible`, `A University of Pittsburgh Project`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 ### Built With
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
+* [Online3DViewer](https://github.com/kovacsv/Online3DViewer)
+* [Jekyll](https://jekyllrb.com/)
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 
@@ -194,7 +189,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## ContactTouchTheInvisible
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - shinwookim@pitt.edu@shinwookim@pitt.edu_client.com
 
 Project Link: [https://github.com/TouchTheInvisible/TouchTheInvisible.github.io](https://github.com/TouchTheInvisible/TouchTheInvisible.github.io)
 
@@ -227,4 +222,4 @@ Project Link: [https://github.com/TouchTheInvisible/TouchTheInvisible.github.io]
 [license-url]: https://github.com/TouchTheInvisible/TouchTheInvisible.github.io/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/kimshinwoo
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: assets/img/screenshot.jpg
