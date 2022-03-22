@@ -6,8 +6,8 @@ description: > # this means to ignore newlines until "baseurl:"
   A University of Pittsburgh Research Project.
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "touchtheinvisible.github.io" # the base hostname & protocol for your site
-twitter_username: PittTweet
-github_username:  shinwookim
+# twitter_username: PittTweet
+github_username:  TouchTheInvisible
 
 # Build settings
 markdown: kramdown

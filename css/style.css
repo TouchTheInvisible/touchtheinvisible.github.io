@@ -151,6 +151,12 @@ p {
 
 
 /* Footer */
+.footer::after {
+	background: #2b2b2b;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	padding: 35px 0;
+}
 .footer {
 	background: #2b2b2b;
 	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
