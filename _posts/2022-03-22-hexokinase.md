@@ -1,4 +1,5 @@
 ---
+layout: model
 title: Hexokinase
 date: 2022-03-22T14:31:12.736Z
 preview: https://molecular-biology.coe.hawaii.edu/wp-content/uploads/2017/12/protein.jpg
