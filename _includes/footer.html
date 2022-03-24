@@ -1,10 +1,11 @@
-<footer class="site-footer">
+<footer class="footer site-footer mb-0">
 
-
+<div class="container ">
   <div class="row">
     <div class="column">
       <ul class="contact-list">
-        <li>  <h2 class="footer-heading">{{ site.title }}</h2></li>
+        <li><h2 class="mt-0 footer-heading">{{ site.title }}</h2></li>
+        <li><p>{{ site.description }}</p></li>
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
       </ul>
     </div>
@@ -42,9 +43,7 @@
       </ul>
     </div>
 
-    <div class="column">
-      <p>{{ site.description }}</p>
-    </div>
+  
   </div>
-
+</div>
 </footer>
