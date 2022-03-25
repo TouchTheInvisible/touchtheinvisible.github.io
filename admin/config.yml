@@ -17,6 +17,6 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Preview", name: "preview", widget: "image"}
-      - {label: "modelfile", name: "modelfile", widget: "text"}
-      - {label: "figuresheet", name: "figuresheet", widget: "file", media_library: "assets/figure_sheets"}
+      - {label: "modelfile", name: "modelfile", widget: "link"}
+      - {label: "figuresheet", name: "figuresheet", widget: "link"}
       - {label: "Body", name: "body", widget: "markdown"}
