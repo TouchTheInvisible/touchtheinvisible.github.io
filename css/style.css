@@ -41,7 +41,7 @@ h1 {
 h2 {
   font-size: 2.3rem; 
   font-weight: 700;
-  margin: 60px 0 30px;
+  margin: 30px 0 15px;
 }
 h3 {
   font-size: 1.8rem;
@@ -56,7 +56,7 @@ h4 {
   margin: 30px 0 15px
 }
 p {
- margin: 0 0 25px;
+ margin: 0 0 10px;
 }
 
 .main-container {
