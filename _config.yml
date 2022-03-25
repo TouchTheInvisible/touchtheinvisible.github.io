@@ -1,7 +1,7 @@
 # Site settings
 title: Touch the Invisible
 subtitle: Bridging Physical and Digital Modeling of Biological Macromolecules
-email: shinwookim@pitt.edu
+email: zus3@pitt.edu
 description: > # this means to ignore newlines until "baseurl:"
   A University of Pittsburgh Research Project.
 # baseurl: "/" # the subpath of your site, e.g. /blog

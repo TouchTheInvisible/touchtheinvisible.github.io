@@ -14,7 +14,7 @@ Infographics are a very good way to introduce each model. They offer a concise a
 Our videos offer additional ways to learn about each molecule, with each video featuring rotating models with additional educational information.
 ## Physical Models
 Currently, our catalog of models includes the following:
-+ DNA
+> + DNA
 + RNA Polymerase
 + Nucleosome
 + Deoxyhemoglobin

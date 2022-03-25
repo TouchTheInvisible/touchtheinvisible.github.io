@@ -1,10 +1,10 @@
 ---
-layout: 'post'
+layout: 'model'
 title: Ribonuclease
 date: 2022-03-21 04:09:00 +0000
 preview: "/assets/img/ribonuclease.png"
-
----
+figuresheet: /assets\figure_sheets\1EUQ_1GAX-Aminoacyl tRNA Synthetase_Photosheet.pdf
+--- 
 
 
 
