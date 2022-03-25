@@ -6,45 +6,21 @@ layout: default
     <h1 class="post-title mb-0">{{ page.title }}</h1>
   </header>  
   <article class="post-content">
+    <!--If modelfile exists, show viewer-->
+    {% if page.modelfile %}
     <div id="viewerFrame" onload="myFunction()"></div>
+    {% endif %}
+    
+    <!--markdown content-->
     {{ content }}
     
+    <!--If figuresheet exists, show pdfbutton-->
+    {% if page.figuresheet %}
     <button onclick="showFigureSheet()">View Figure Sheet</button>
     <div id="figsheet" style="display:none">
       <embed src="{{ page.figuresheet }}" type="application/pdf" width="100%" height="800px"/>
     </div>
-    
-    <script>
-        document.onload(modelSelector('{{ page.modelfile }}'));
-        function modelSelector(str) {
-          let link = "https://3dviewer.net/embed.html#model=";
-          link += str;
-          let front = ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
-          let back = '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
-          let poweredBy ='<p class="mb-0">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
-          let ctrlHelp = '<button type="button" data-bs-toggle="popover" data-bs-placement="left" title="Control Tips" data-bs-content="Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan">Toggle Tool Tips</button>'
-          document.getElementById("viewerFrame").innerHTML = front + link + back + poweredBy + ctrlHelp;
-        }
-        </script>
-        
-        <script>
-        function showFigureSheet(){
-          var x = document.getElementById("figsheet");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
-        } 
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function(){
-          var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-          var popoverList = popoverTriggerList.map(function(element){
-              return new bootstrap.Popover(element);
-          });
-      });
-      </script>  
+    {% endif %}    
   </article> 
   <div class="post-nav">
     {% if page.next.url %}
@@ -55,3 +31,22 @@ layout: default
     {% endif %}
   </div>
 </div>
+<script>
+  document.onload(modelSelector('{{ page.modelfile }}'));
+  function modelSelector(str) {
+    let link = "https://3dviewer.net/embed.html#model=";
+    link += str;
+    let front = ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
+    let back = '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
+    let poweredBy ='<p class="mb-0">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
+    document.getElementById("viewerFrame").innerHTML = front + link + back + poweredBy;
+  }
+  function showFigureSheet(){
+    var x = document.getElementById("figsheet");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  } 
+</script>
