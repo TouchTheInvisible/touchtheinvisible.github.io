@@ -5,7 +5,7 @@ date: 2022-03-21 04:09:00 +0000
 preview: "/assets/img/ribonuclease.png"
 
 ---
-<embed src="/assets/figure_sheets/DNA_Photosheet.pdf" type="application/pdf" width="100%" height="800px" />
+
 
 
 
