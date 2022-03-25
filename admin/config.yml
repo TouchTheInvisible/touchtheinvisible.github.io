@@ -4,7 +4,7 @@ backend:
   branch: master
   site_domain: TouchTheInvisible.github.io
 
-media_folder: "images/uploads"
+media_folder: "assets"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
