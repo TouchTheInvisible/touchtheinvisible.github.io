@@ -19,4 +19,5 @@ collections:
       - {label: "Preview", name: "preview", widget: "image"}
       - {label: "modelfile", name: "modelfile", widget: "file"}
       - {label: "figuresheet", name: "figuresheet", widget: "file"}
+      - {label: "infographic", name: "infographic", widget: "file"}
       - {label: "Body", name: "body", widget: "markdown"}
