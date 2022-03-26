@@ -32,7 +32,10 @@ layout: default
   </div>
 </div>
 <script>
-  document.onload(modelSelector('{{ page.modelfile }}'));
+  document.addEventListener("DOMContentLoaded", function() {
+    modelSelector('{{ page.modelfile }}');
+  });
+
   function modelSelector(str) {
     let link = "https://3dviewer.net/embed.html#model=";
     link += str;
