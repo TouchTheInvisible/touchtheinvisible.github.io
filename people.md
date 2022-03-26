@@ -79,7 +79,8 @@ permalink: /people/
       <div class="col-8">
         <h2>Shinwoo Kim</h2>
         <p>Webmaster</p>
-        <p><a href="mailto:shinwookim@pitt.edu">shinwookim@pitt.edu</a></p>
+        <p class="mb-0"><a href="mailto:shinwookim@pitt.edu">shinwookim@pitt.edu</a></p>
+        <p><a href="http://sites.pitt.edu/~shk148">sites.pitt.edu/~shk148</a></p>
       </div>
     </div>
   </div>
