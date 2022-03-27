@@ -1,5 +1,5 @@
 <h1 align="center">Touch the Invisible</h1>
-*Bridging Physical and Digital Modeling of Biological Macromolecules*
+<h3 alignt="center">Bridging Physical and Digital Modeling of Biological Macromolecules</h3>
 
 
 ## What is this?
