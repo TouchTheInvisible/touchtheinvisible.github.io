@@ -16,6 +16,6 @@ TouchTheInvisible uses a number of open source projects to work properly:
 - [jQuery](https://jquery.com/)
 - Ruby, Javascript, and More
 
-And of course Dillinger itself is open source with a [public repository](https://github.com/TouchTheInvisible/TouchTheInvisible.github.io/) on GitHub.
+And of course TTI itself is open source with a [public repository](https://github.com/TouchTheInvisible/TouchTheInvisible.github.io/) on GitHub.
 ## License
 [MIT License](LICENSE)
