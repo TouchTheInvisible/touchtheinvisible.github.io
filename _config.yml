@@ -12,3 +12,9 @@ github_username:  TouchTheInvisible
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+collections:
+  - members
+    output: true
+
+

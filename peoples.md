@@ -1,7 +1,7 @@
 ---
 layout: page
 title: People
-permalink: /people/
+permalink: /peoples/
 ---
 <div class="container-fluid h-100">
    <div class="d-flex h-100 mb-3">
