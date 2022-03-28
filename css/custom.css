@@ -1,16 +1,24 @@
 :root {
-    /* Primary Colors */
-    --pitt-blue: #003594;
-    --pitt-gold: #ffb81c;
-    --pitt-grey: #2b2b2b;
-    --pitt-button-blue: #3366ff;
-    /* Secondary Colors */
-    --pitt-orange: #FC0;
-    --pitt-navy: #1C2957;
-    --pitt-light-grey: #e8e9ee;
-
+  /* Primary Colors */
+  --pitt-blue: #003594;
+  --pitt-gold: #ffb81c;
+  --pitt-grey: #2b2b2b;
+  --pitt-button-blue: #3366ff;
+  /* Secondary Colors */
+  --pitt-orange: #FC0;
+  --pitt-navy: #1C2957;
+  --pitt-light-grey: #e8e9ee;
+}
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+.site-title {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 700;
 }
 
+.nav-item {
+  font-family: 'Barlow Condensed', sans-serif;
+}
 
 header{
   color: #fff
@@ -82,7 +90,6 @@ div.desc {
  
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
 .responsive-iframe {
   position: absolute;
   top: 0;
