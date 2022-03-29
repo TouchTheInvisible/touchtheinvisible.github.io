@@ -84,8 +84,9 @@ layout: default
     let front = ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
     let back = '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
     let poweredBy ='<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
-    let ctrltip ='<h6 class="mb-5">Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</h6>';
-    document.getElementById("viewerFrame").innerHTML = front + link + back + poweredBy+ctrltip;
+    let ctrltip ='<h6>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</h6>';
+    let download ='<div class="text-center"><a target="_blank" href="'+str+'"><button class="mb-5 btn btn-success">Download this Model</button></a></div>'
+    document.getElementById("viewerFrame").innerHTML = front + link + back + poweredBy+ctrltip+download;
   }
   function showFigureSheet(){
     var x = document.getElementById("figsheet");
