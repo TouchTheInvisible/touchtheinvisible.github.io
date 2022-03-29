@@ -12,8 +12,11 @@
                     <h3 class="mt-3 mb-0">{{ post.name }}</h3>
                     <p>{{ post.title }}</p>
                     <p class="mb-0"><a href="mailto:{{ post.email }}" style="text-decoration: underline;">{{ post.email }}</a></p>
+                    {% if post.profile %}
+                        <p style="text-decoration: underline;" class="mb-0"><a href="http://{{ post.profile }}">Profile</a></p>
+                    {% endif %}
                     {% if post.website %}
-                        <p style="text-decoration: underline;"><a href="http://{{ post.website }}">{{post.website}}</a></p>
+                        <p style="text-decoration: underline;"><a href="http://{{ post.website }}">Personal Webiste</a></p>
                     {% endif %}
                 </div>
             </div>
