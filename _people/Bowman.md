@@ -1,7 +1,8 @@
 ---
 name: Grace Bowman
 title: Reseacher, Undergraduate
-photo: "holder.js/200x140?auto=yes" 
+photo: "/assets/img/people/Bowman.JPEG" 
+adjustment: "object-position: 0% 15%;"
 email: gcb28@pitt.edu
 order: 70
 ---
