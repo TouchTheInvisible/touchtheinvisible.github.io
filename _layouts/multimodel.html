@@ -1,0 +1,106 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title mb-5">{{ page.title }}</h1>
+  </header>  
+  <article class="post-content">
+   
+   
+    <!--If modelfile exists, show viewer-->
+    <div id="viewerFrame" class="iframe-container"></div>
+    <div class="text-center mb-5">
+    {% if page.modelfile1 %}
+    <button onclick="modelSelector('{{ page.modelfile1 }}')" class="mb-2">View {{ page.modeltitle1 }}</button>
+    {% endif %}
+    {% if page.modelfile2 %}
+    <button onclick="modelSelector('{{ page.modelfile2 }}')"class="mb-2">View {{ page.modeltitle2 }}</button>
+    {% endif %}
+    {% if page.modelfile3 %}
+    <button onclick="modelSelector('{{ page.modelfile3 }}')" class="mb-2">View {{ page.modeltitle3 }}</button>
+    {% endif %}
+    {% if page.modelfile4 %}
+    <button onclick="modelSelector('{{ page.modelfile4 }}')" class="mb-2">View {{ page.modeltitle4 }}</button>
+    {% endif %}
+    {% if page.modelfile5 %}
+    <button onclick="modelSelector('{{ page.modelfile5 }}')" class="mb-2">View {{ page.modeltitle5 }}</button>
+    {% endif %}
+    {% if page.modelfile6 %}
+    <button onclick="modelSelector('{{ page.modelfile6 }}')" class="mb-2">View {{ page.modeltitle6 }}</button>
+    {% endif %}
+    {% if page.modelfile7 %}
+    <button onclick="modelSelector('{{ page.modelfile7 }}')" class="mb-2">View {{ page.modeltitle7 }}</button>
+    {% endif %}
+    {% if page.modelfile8 %}
+    <button onclick="modelSelector('{{ page.modelfile8 }}')" class="mb-2">View {{ page.modeltitle8 }}</button>
+    {% endif %}
+    {% if page.modelfile9 %}
+    <button onclick="modelSelector('{{ page.modelfile9 }}')" class="mb-2">View {{ page.modeltitle9 }}</button>
+    {% endif %}
+    {% if page.modelfile10 %}
+    <button onclick="modelSelector('{{ page.modelfile10 }}')" class="mb-2">View {{ page.modeltitle10 }}</button>
+    {% endif %}
+    </div>
+
+
+    <!--markdown content-->
+    {{ content }}
+    <div class="mb-3 text-center">
+    <!--If figuresheet exists, show pdfbutton-->
+    {% if page.figuresheet %}
+    <button onclick="showFigureSheet()">View Figure Sheet</button>
+    <div id="figsheet" style="display:none">
+      <embed src="{{ page.figuresheet }}" type="application/pdf" width="100%" height="800px"/>
+    </div>
+    {% endif %} 
+  </div>
+    <!--If infographic exists, show pdfbutton-->
+    {% if page.infographic %}
+    <div class="mb-3 text-center">
+    <button onclick="showinfographic()">View Infographic</button>
+    <div id="infographic" style="display:none">
+      <embed src="{{ page.infographic }}" type="application/pdf" width="100%" height="800px"/>
+    </div>
+    </div>
+    {% endif %} 
+    
+
+
+  </article> 
+  <div class="post-nav">
+    {% if page.next.url %}
+      <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Prev</a>
+    {% endif %}
+    {% if page.previous.url %}
+      <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}">Next &raquo;</a>
+    {% endif %}
+  </div>
+</div>
+<script>
+  function modelSelector(str) {
+    let link = "https://3dviewer.net/embed.html#model=";
+    link += str;
+    let front = ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
+    let back = '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
+    let poweredBy ='<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
+    let ctrltip ='<h6 class="mb-5">Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</h6>';
+    document.getElementById("viewerFrame").innerHTML = front + link + back + poweredBy+ctrltip;
+  }
+  function showFigureSheet(){
+    var x = document.getElementById("figsheet");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  } 
+  function showinfographic(){
+    var x = document.getElementById("infographic");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  } 
+</script>
