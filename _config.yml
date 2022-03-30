@@ -15,6 +15,3 @@ permalink: pretty
 
 collections:
   - people
-
-plugins:
-  - jekyll-compress-images

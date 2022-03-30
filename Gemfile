@@ -7,4 +7,3 @@ end
 
 gem "webrick", "~> 1.7"
 
-gem 'jekyll-compress-images'
