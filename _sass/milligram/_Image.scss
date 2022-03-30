@@ -13,3 +13,8 @@
 img {
 	max-width: 100%;
 }
+
+.profile:hover{
+	transform: scale(1.15); 
+	transition: transform .5s ease;
+  }

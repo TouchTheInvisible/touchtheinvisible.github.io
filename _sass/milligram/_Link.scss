@@ -19,3 +19,43 @@ a {
 		color: $color-secondary;
 	}
 }
+
+.secondary-links {
+    float: right;
+    padding: 12px 15px 18px;
+    background: transparent;
+    display: block;
+    margin-right: 30px;
+    margin-top: 14px;
+}
+
+.secondary-links ul.menu {
+    font-size: 10px;
+    font-size: 1.0rem;
+    line-height: 0;
+    margin: 0 -15px;
+}
+
+.secondary-links ul.menu li {
+    float: left;
+    list-style-type: none;
+}
+
+.secondary-links ul.menu li:first-child {
+    border-right: 1px solid #d6d6e0;
+}
+
+.secondary-links ul.menu li a {
+    padding: 0 10px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #ffb81c;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.secondary-links ul.menu li a:hover {
+    text-decoration: underline;
+}
