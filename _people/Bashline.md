@@ -1,7 +1,7 @@
 ---
 name: Colin Bashline
 title: Reseacher
-photo: "holder.js/200x140?auto=yes" 
+photo: "/assets/img/people/Bashline.jpeg" 
 email: colinbashline@pitt.edu
 order: 20
 ---
