@@ -15,6 +15,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @font-face {
     font-family: 'cooper_hewittmedium';
     src: url('fonts/cooperhewitt-medium-webfont.woff2') format('woff2'),
@@ -38,16 +39,19 @@ h4,
 h5,
 h6 {
 	font-weight: 300;
-	letter-spacing: -.1rem;
+	font-family: 'DM Serif Display', serif;
+	//letter-spacing: -.1rem;
 	// margin-bottom: 1.0rem;
 	margin-top: 0;
 }
-
+.rubik{
+	font-family: "Rubik", "Helvetica Neue", Arial, sans-serif;
+}
 h1 {
 	line-height: 1.2;
-	font-family: "Rubik", "Helvetica Neue", Arial, sans-serif;
+	//font-family: "Rubik", "Helvetica Neue", Arial, sans-serif;
 	font-size: 4.0rem; 
-	font-weight: 700;
+	font-weight: 400;
 }
 
 h2 {
