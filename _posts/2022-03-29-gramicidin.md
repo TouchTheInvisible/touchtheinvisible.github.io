@@ -1,5 +1,5 @@
 ---
-layout: multimodel
+layout: model
 title: Gramicidin
 date: 2022-03-22T14:31:12.736Z
 preview: "https://github.com/TouchTheInvisible/touchtheinvisible.github.io/blob/master/assets/img/1NRM-Gramicidin/1NRM-Gramicidin_Ribbon+HBonds+AA.png?raw=true" 
