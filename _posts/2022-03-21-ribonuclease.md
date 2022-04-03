@@ -1,6 +1,6 @@
 ---
 layout: model
-title: DNA
+title: RNase
 date: 2022-03-22T14:31:12.736Z
 preview: "https://github.com/TouchTheInvisible/touchtheinvisible.github.io/blob/master/assets/img/1FS3-RibonucleaseA/1FS3-RibonucleaseA_Ribbon+HBonds+DisulfideBridges.png?raw=true" 
 modelfile1: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisible.github.io/master/assets/models/1FS3-RibonucleaseA/1FS3-RibonucleaseA_Ribbon.dae
