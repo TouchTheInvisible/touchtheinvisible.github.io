@@ -8,4 +8,4 @@ modeltitle1: PhosphofructokinaseMonomer Ribbon
 figuresheet: /assets\figure_sheets\1PFK-Phosphofructokinase_Photosheet.pdf
 infographic: /assets\infographics\PFK_Infographics.pdf
 ---
-Phosphofructokinase Monomer
+Phosphofructokinase regulates glycolysis, a carbohydrate metabolism energy pathway, by feedback inhibition, as its activity is regulated by the presence of ATP, which is a product of the process. If there are high levels of ATP, ATP binds to its allosteric site, inhibiting it. Otherwise, this enzyme transfers a phosphoryl group in the third step of glycolysis allowing the efficient production of ATP as needed. This enzyme is found in the cytoplasm of bacterial, plant, fungal, animal cells.
