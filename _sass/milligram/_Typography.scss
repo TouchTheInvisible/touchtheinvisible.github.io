@@ -16,6 +16,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+/*
 @font-face {
     font-family: 'cooper_hewittmedium';
     src: url('fonts/cooperhewitt-medium-webfont.woff2') format('woff2'),
@@ -23,6 +24,7 @@
     font-weight: normal;
     font-style: normal;
 }
+*/
 b,
 strong {
 	font-weight: bold;
@@ -90,7 +92,8 @@ h6 {
 }
 
 .site-identity {
-	font-family: "cooper_hewittmedium", "Open Sans", "Nelvetica Neue", arial, sans-serif;
+	//font-family: "cooper_hewittmedium", "Open Sans", "Nelvetica Neue", arial, sans-serif;
+	font-family: "Open Sans", "Nelvetica Neue", arial, sans-serif;
 	line-height: 1;
 }
 .site-identity a {
