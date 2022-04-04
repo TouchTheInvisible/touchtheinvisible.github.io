@@ -6,9 +6,11 @@
   <body>
 
     <main class="wrapper">
+      <div class="mb-5">
+        {% include header.html %}
+        {% include announcements.html %}
+      </div>
       
-      {% include header.html %}
-
       <div class="container">
         {{ content }}
 
