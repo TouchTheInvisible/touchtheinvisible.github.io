@@ -8,6 +8,4 @@ modeltitle1: Hexokinase RibbonWithHBonds
 figuresheet: /assets\figure_sheets\3O8M_3O80-Hexokinase_Photosheet.pdf
 infographic: /assets\infographics\Hexokinase Infographic.pdf
 ---
-A hexokinase is an enzyme that phosphorylates hexoses (six-carbon sugars), forming hexose phosphate. In most organisms, glucose is the most important substrate for hexokinases, and glucose-6-phosphate is the most important product. Hexokinase possesses the ability to transfer an inorganic phosphate group from ATP to a substrate.
-
-Hexokinases should not be confused with glucokinase, which is a specific isoform of hexokinase. All hexokinases are capable of phosphorylating several hexoses but glucokinase acts with a 50-fold lower substrate affinity and its main hexose substrate is glucose.
+Hexokinase is an enzyme involved in energy metabolism as it phosphorylates hexose in the rate-limiting step of glycolysis. Once it catalyzes the transfer of the phosphate group, the new product glucose-6-phosphate must be used in an energy metabolic pathway including glycolysis, storage, or pentose phosphate pathway. Hexokinase is allosterically inhibited by its product if there are high levels of glucose-6-phosphate present in the cell. It is found in bacterial, fungal, plant, and animal cells especially in the tissues with high energy demands, such as heart, skeletal, and adipose tissues.
