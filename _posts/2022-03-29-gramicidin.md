@@ -23,6 +23,4 @@ modeltitle5: "Gramicidin Surface Model"
 figuresheet: /assets\figure_sheets\1NRM-Gramicidin_Photosheet.pdf
 infographic: /assets\infographics\Gramicidin_Infographics.pdf
 ---
-A hexokinase is an enzyme that phosphorylates hexoses (six-carbon sugars), forming hexose phosphate. In most organisms, glucose is the most important substrate for hexokinases, and glucose-6-phosphate is the most important product. Hexokinase possesses the ability to transfer an inorganic phosphate group from ATP to a substrate.
-
-Hexokinases should not be confused with glucokinase, which is a specific isoform of hexokinase. All hexokinases are capable of phosphorylating several hexoses but glucokinase acts with a 50-fold lower substrate affinity and its main hexose substrate is glucose.
+Gramicidin is a naturally occurring antibiotic protein secreted by the bacterium _Bacillus brevis_. Structurally, it is composed of two identical monomeric helices forming a transmembrane channel. The channel portion of the protein facilitates the diffusion of ions across the membrane, disrupting the natural ion distribution across the cellular membrane, eventually leading to cell death. In the natural environment, _B. brevis_ secretes the protein to outcompete other bacteria and fungi in the environment. Gramicidin has been used in treatment of topical infections for the antibiotic effect on a diverse range of bacteria.
