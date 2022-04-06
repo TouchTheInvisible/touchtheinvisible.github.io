@@ -8,4 +8,4 @@ modeltitle1: AquaporinMonomer w/ Ribbon
 figuresheet: https://touchtheinvisible.github.io/assets/figure_sheets/Aquaporin
   photosheet.pdf
 ---
-Aquaporin
+Aquaporins are integral membrane proteins that are expressed in almost every organism. They form transmembrane channels allowing for fast diffusion of water molecules across cellular membranes. Some aquaporins also transport small solutes such as K+, Na+, NH3, or glycerol. An aquaporin structure is composed of a bundle of 6 alpha helices. These monomers combine into homotetramers or heteroteramers, but each monomer serves as a channel for water molecules. Aquaporins are essential for the water transport system in plants and the tolerance to drought and salt stresses. In human kidneys, delivery of aquaporins into cellular membranes is regulated by the antidiuretic hormone, allowing water reabsorption when dehydrated. ![image](https://user-images.githubusercontent.com/94339805/161874520-0310669a-1ed7-4466-b7e7-58d3ef505e01.png)
