@@ -8,4 +8,4 @@ modeltitle1: Zinc Finger Colored Ribbon No Surface
 figuresheet: /assets/figure_sheets/1AAY-Zinc Finger Motif_Photosheet.pdf
 infographic: /assets\infographics\Zinc_finger_Infographics.pdf
 ---
-Zinc-finger motifs are small proteins that appear in a variety of distinct, unrelated molecules. They contains one or more zinc ions that stabilize the way the protein folds around DNA. Zinc-fingers bind to DNA and acts as transcription factors, regulating DNA transcription (synthesis of RNA from a DNA template). They are also found in proteins involved in DNA repair, RNA binding, protein degradation, and signal transduction.
+Zinc finger is a structural motif found in many different nucleic acid binding proteins. It contains one or more zinc ions that stabilize the way the protein folds around DNA. Zinc finger binds to DNA and acts as a transcription factor, regulating synthesis of RNA from a DNA template. It is also found in proteins involved in DNA repair, RNA binding, protein degradation, and signal transduction.
