@@ -16,6 +16,13 @@ TouchTheInvisible uses a number of open source projects to work properly:
 - [jQuery](https://jquery.com/)
 - Ruby, Javascript, and More
 
-And of course TTI itself is open source with a [public repository](https://github.com/TouchTheInvisible/TouchTheInvisible.github.io/) on GitHub.
+## Development
+To build and view the site locally, run:
+
+```
+bundle exec jekyll serve
+```
+
+And of course __Touch the Invisbile__ itself is open source with a [public repository](https://github.com/TouchTheInvisible/TouchTheInvisible.github.io/) on GitHub.
 ## License
 [MIT License](LICENSE)
