@@ -9,6 +9,11 @@ url: "touchtheinvisible.github.io" # the base hostname & protocol for your site
 # twitter_username: PittTweet
 github_username:  TouchTheInvisible
 
+plugins:
+  - jekyll-spaceship
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 # Build settings
 markdown: kramdown
 permalink: pretty

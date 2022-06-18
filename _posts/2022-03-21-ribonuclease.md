@@ -23,7 +23,7 @@ modeltitle5: "RNase Surface Model"
 
 
 
-figuresheet: /assets\figure_sheets\1FS3-RibonucleaseA_Photosheet.pdf
-infographic: /assets\infographics\RNAse_Infographics.pdf
+figuresheet: /assets/figure_sheets/1FS3-RibonucleaseA_Photosheet.pdf
+infographic: /assets/infographics/RNAse_Infographics.pdf
 ---
 Ribonuclease A is an enzyme which degrades RNA into nucleotides by hydrolyzing phosphodiester bonds on the 3’ end of a pyrimidine (C or U). It is a small protein whose structure consists of 3 helices, 7 beta sheets, connected by 4 disulfide bridges. Due to its small size and stability, it has been used in biochemical research to discover many things including the spontaneous folding of proteins. RNase can also be cytotoxic, killing cells by degrading their RNA.
