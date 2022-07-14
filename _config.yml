@@ -5,9 +5,9 @@ email: zus3@pitt.edu
 description: > # this means to ignore newlines until "baseurl:"
   A University of Pittsburgh Research Project. Bridging Physical and Digital Modeling of Biological Macromolecules
 # baseurl: "/" # the subpath of your site, e.g. /blog
-url: "touchtheinvisible.github.io" # the base hostname & protocol for your site
+url: "touchtheinvisible.com" # the base hostname & protocol for your site
 # twitter_username: PittTweet
-github_username:  TouchTheInvisible
+github_username: TouchTheInvisible
 
 plugins:
   - jekyll-spaceship
