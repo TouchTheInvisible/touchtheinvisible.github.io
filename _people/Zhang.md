@@ -1,6 +1,6 @@
 ---
 name: Anju Zhang
-title: Researcher, Undergraduate
+title: Project Developer, Undergraduate
 photo: "/assets/img/people/Zhang.jpg" 
 email: anz66@pitt.edu
 adjustment: "object-position: 0% 25%;"
