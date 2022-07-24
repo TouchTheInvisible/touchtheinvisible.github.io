@@ -1,6 +1,6 @@
 ---
 name: Colin Bashline
-title: Reseacher
+title: Project Developer
 photo: "/assets/img/people/Bashline.jpeg" 
 email: colinbashline@pitt.edu
 order: 30
