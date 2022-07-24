@@ -1,6 +1,6 @@
 ---
 name: Neha Dutt
-title: Reseacher, Undergraduate
+title: Project Developer, Undergraduate
 photo: "/assets/img/people/Dutt.JPG" 
 email: ned52@pitt.edu
 order: 80
