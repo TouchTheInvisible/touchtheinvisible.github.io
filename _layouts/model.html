@@ -15,52 +15,52 @@ layout: default
         <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
           <li>
             {% if page.modelfile1 %}
-              <a onclick="modelSelector('{{ page.modelfile1 }}'); currentModel('{{ page.modeltitle1 }}');" class="mb-2">{{ page.modeltitle1 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile1 }}'); currentModel('{{ page.modeltitle1 }}');" class="mb-2 dropdown-item">{{ page.modeltitle1 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile2 %}
-              <a onclick="modelSelector('{{ page.modelfile2 }}'); currentModel('{{ page.modeltitle2 }}');"class="mb-2">{{ page.modeltitle2 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile2 }}'); currentModel('{{ page.modeltitle2 }}');"class="mb-2 dropdown-item">{{ page.modeltitle2 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile3 %}
-              <a onclick="modelSelector('{{ page.modelfile3 }}'); currentModel('{{ page.modeltitle3 }}');" class="mb-2">{{ page.modeltitle3 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile3 }}'); currentModel('{{ page.modeltitle3 }}');" class="mb-2 dropdown-item">{{ page.modeltitle3 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile4 %}
-              <a onclick="modelSelector('{{ page.modelfile4 }}'); currentModel('{{ page.modeltitle4 }}');" class="mb-2">{{ page.modeltitle4 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile4 }}'); currentModel('{{ page.modeltitle4 }}');" class="mb-2 dropdown-item">{{ page.modeltitle4 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile5 %}
-              <a onclick="modelSelector('{{ page.modelfile5 }}'); currentModel('{{ page.modeltitle5 }}');" class="mb-2">{{ page.modeltitle5 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile5 }}'); currentModel('{{ page.modeltitle5 }}');" class="mb-2 dropdown-item">{{ page.modeltitle5 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile6 %}
-              <a onclick="modelSelector('{{ page.modelfile6 }}'); currentModel('{{ page.modeltitle6 }}');" class="mb-2">{{ page.modeltitle6 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile6 }}'); currentModel('{{ page.modeltitle6 }}');" class="mb-2 dropdown-item">{{ page.modeltitle6 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile7 %}
-              <a onclick="modelSelector('{{ page.modelfile7 }}'); currentModel('{{ page.modeltitle7 }}');" class="mb-2">{{ page.modeltitle7 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile7 }}'); currentModel('{{ page.modeltitle7 }}');" class="mb-2 dropdown-item">{{ page.modeltitle7 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile8 %}
-              <a onclick="modelSelector('{{ page.modelfile8 }}'); currentModel('{{ page.modeltitle8 }}');" class="mb-2">{{ page.modeltitle8 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile8 }}'); currentModel('{{ page.modeltitle8 }}');" class="mb-2 dropdown-item">{{ page.modeltitle8 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile9 %}
-              <a onclick="modelSelector('{{ page.modelfile9 }}'); currentModel('{{ page.modeltitle9 }}');" class="mb-2">{{ page.modeltitle9 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile9 }}'); currentModel('{{ page.modeltitle9 }}');" class="mb-2 dropdown-item">{{ page.modeltitle9 }}</a>
             {% endif %}
           </li>
           <li>
             {% if page.modelfile10 %}
-              <a onclick="modelSelector('{{ page.modelfile10 }}'); currentModel('{{ page.modeltitle10 }}');" class="mb-2">{{ page.modeltitle10 }}</a>
+              <a onclick="modelSelector('{{ page.modelfile10 }}'); currentModel('{{ page.modeltitle10 }}');" class="mb-2 dropdown-item">{{ page.modeltitle10 }}</a>
             {% endif %}
           </li>
         </ul>
@@ -97,7 +97,7 @@ layout: default
     <!--If infographic exists, show pdfbutton-->
     {% if page.infographic %}
       <div class="mb-3 text-center">
-        <button onclick="showinfographic()">View Infographic</button>
+        <button onclick="showinfographic()">View&ensp;Infographic</button>
         <div id="infographic" style="display:none">
           <embed src="{{ page.infographic }}" type="application/pdf" width="100%" height="800px"/>
         </div>
