@@ -18,9 +18,12 @@ modeltitle4: "Gramicidin Full-Atomic Model with Transparent Surface"
 modelfile5: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisible.github.io/master/assets/models/1NRM-Gramicidin/1NRM-Gramicidin_Surface.dae
 modeltitle5: "Gramicidin Surface Model"
 
-
+image: http://www.chemspider.com/ImagesHandler.ashx?id=66085&w=250&h=250
+image-text: "Gramicidin Printed Out"
 
 figuresheet: /assets/figure_sheets/1NRM-Gramicidin_Photosheet.pdf
 infographic: /assets/infographics/Gramicidin_Infographics.pdf
 ---
 Gramicidin is a naturally occurring antibiotic protein secreted by the bacterium _Bacillus brevis_. Structurally, it is composed of two identical monomeric helices forming a transmembrane channel. The channel portion of the protein facilitates the diffusion of ions across the membrane, disrupting the natural ion distribution across the cellular membrane, eventually leading to cell death. In the natural environment, _B. brevis_ secretes the protein to outcompete other bacteria and fungi in the environment. Gramicidin has been used in treatment of topical infections for the antibiotic effect on a diverse range of bacteria.
+
+

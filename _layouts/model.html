@@ -77,6 +77,11 @@ layout: default
         <p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p >
         <div class="text-center"><a target="_blank" href="{{ page.modelfile1 }}"><button class="mb-5 btn btn-success">Download this Model</button></a></div>
       {% endif %}
+      {% if page.image %}
+      <div class="text-center">
+      <img src="{{ page.image }}" alt="{{ page.image-alt }}">
+    </div>
+      {% endif %}
     </div>
     <!--markdown content-->
     {{ content }}
