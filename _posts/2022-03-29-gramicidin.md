@@ -18,7 +18,7 @@ modeltitle4: "Gramicidin Full-Atomic Model with Transparent Surface"
 modelfile5: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisible.github.io/master/assets/models/1NRM-Gramicidin/1NRM-Gramicidin_Surface.dae
 modeltitle5: "Gramicidin Surface Model"
 
-image: https://drive.google.com/file/d/1JBRGG4_gvKuHfQd9ZBm2vuDOZ8x35RTf
+image: https://drive.google.com/file/d/1fUluvfVrcCohD9ffXX0uZPFRlWJvW7ms/preview
 image-text: "Gramicidin Printed Out"
 
 figuresheet: /assets/figure_sheets/1NRM-Gramicidin_Photosheet.pdf
