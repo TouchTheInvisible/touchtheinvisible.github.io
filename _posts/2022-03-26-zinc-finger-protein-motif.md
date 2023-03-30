@@ -7,6 +7,8 @@ models:
     - name: Zinc Finger Colored Ribbon No Surface
       file: https://raw.githubusercontent.com/TouchTheInvisible/TouchTheInvisible.github.io/master/assets/models/1AAY-Zinc%20Finger%20Motif/1AAY%20ZincFinger%20Colored%20Ribbon%20NoSurface%20DNA%20SolidSurface.dae
 
+image: https://drive.google.com/file/d/1X1k5PUvLoKumY1r05M23W8H60eL9FmoD/preview
+
 figuresheet: /assets/figure_sheets/1AAY-Zinc Finger Motif_Photosheet.pdf
 infographic: /assets/infographics/Zinc_finger_Infographics.pdf
 ---
