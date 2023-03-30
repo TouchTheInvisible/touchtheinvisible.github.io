@@ -4,83 +4,48 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title mb-5">{{ page.title }}</h1>
-  </header>  
+  </header>
   <article class="post-content">
     <!--If modelfile exists, show viewer-->
     <div class="text-center">
-      {% if page.modelfile2 %}
+      {% if page.models %}
+      {% if page.models[2] %}
       <div class="btn-group" role="group">
-        <button id="showmodels" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Select Model to Display</button>
-        <style>ul.dropdown-menu{font-size: 1.1em; cursor: pointer;}</style>
+        <button id="showmodels" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">Select Model to Display</button>
+        <style>
+          ul.dropdown-menu {
+            font-size: 1.1em;
+            cursor: pointer;
+          }
+        </style>
         <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-          <li>
-            {% if page.modelfile1 %}
-              <a onclick="modelSelector('{{ page.modelfile1 }}'); currentModel('{{ page.modeltitle1 }}');" class="mb-2 dropdown-item">{{ page.modeltitle1 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile2 %}
-              <a onclick="modelSelector('{{ page.modelfile2 }}'); currentModel('{{ page.modeltitle2 }}');"class="mb-2 dropdown-item">{{ page.modeltitle2 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile3 %}
-              <a onclick="modelSelector('{{ page.modelfile3 }}'); currentModel('{{ page.modeltitle3 }}');" class="mb-2 dropdown-item">{{ page.modeltitle3 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile4 %}
-              <a onclick="modelSelector('{{ page.modelfile4 }}'); currentModel('{{ page.modeltitle4 }}');" class="mb-2 dropdown-item">{{ page.modeltitle4 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile5 %}
-              <a onclick="modelSelector('{{ page.modelfile5 }}'); currentModel('{{ page.modeltitle5 }}');" class="mb-2 dropdown-item">{{ page.modeltitle5 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile6 %}
-              <a onclick="modelSelector('{{ page.modelfile6 }}'); currentModel('{{ page.modeltitle6 }}');" class="mb-2 dropdown-item">{{ page.modeltitle6 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile7 %}
-              <a onclick="modelSelector('{{ page.modelfile7 }}'); currentModel('{{ page.modeltitle7 }}');" class="mb-2 dropdown-item">{{ page.modeltitle7 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile8 %}
-              <a onclick="modelSelector('{{ page.modelfile8 }}'); currentModel('{{ page.modeltitle8 }}');" class="mb-2 dropdown-item">{{ page.modeltitle8 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile9 %}
-              <a onclick="modelSelector('{{ page.modelfile9 }}'); currentModel('{{ page.modeltitle9 }}');" class="mb-2 dropdown-item">{{ page.modeltitle9 }}</a>
-            {% endif %}
-          </li>
-          <li>
-            {% if page.modelfile10 %}
-              <a onclick="modelSelector('{{ page.modelfile10 }}'); currentModel('{{ page.modeltitle10 }}');" class="mb-2 dropdown-item">{{ page.modeltitle10 }}</a>
-            {% endif %}
-          </li>
+          {% for model in page.models%}
+          <a onclick="modelSelector('{{ model.file }}'); currentModel('{{ model.name }}');"
+            class="mb-2 dropdown-item">{{ model.name }}</a>
+          {% endfor %}
         </ul>
       </div>
+      {% endif %}
       {% endif %}
     </div>
     <!-- Viewer Goes Here-->
     <div id="viewerFrame" class="iframe-container">
       <!--Default: Show Model 1-->
-      {% if page.modelfile1 %}
-        <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="https://3dviewer.net/embed.html#model={{ page.modelfile1 }}" width="640" height="480" style="border:1px solid #000;" ></iframe>
-        <div id="modelTitle" class="text-center">Currently Showing: {{page.modeltitle1}}</div>
-        <p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>
-        <p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p >
-        <div class="text-center"><a target="_blank" href="{{ page.modelfile1 }}"><button class="mb-5 btn btn-success">Download this Model</button></a></div>
+      {% if page.models %}
+      <iframe id="modelViewer" style="display:block; margin-top: 3em;"
+        src="https://3dviewer.net/embed.html#model={{ page.models[0].file }}" width="640" height="480"
+        style="border:1px solid #000;"></iframe>
+      <div id="modelTitle" class="text-center">Currently Showing: {{page.models[0].name}}</div>
+      <p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>
+      <p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>
+      <div class="text-center"><a target="_blank" href="{{ page.models[0].file }}"><button
+            class="mb-5 btn btn-success">Download this Model</button></a></div>
       {% endif %}
       {% if page.image %}
       <div class="text-center">
-      <iframe src="{{ page.image }}" width="640" height="480" allow="autoplay"></iframe>
-    </div>
+        <iframe src="{{ page.image }}" width="640" height="480" allow="autoplay"></iframe>
+      </div>
       {% endif %}
     </div>
     <!--markdown content-->
@@ -88,28 +53,28 @@ layout: default
     <div class="text-center mb-3">
       <!--If figuresheet exists, show pdfbutton-->
       {% if page.figuresheet %}
-        <button onclick="showFigureSheet()">View Figure Sheet</button>
-        <div id="figsheet" style="display:none">
-          <embed src="{{ page.figuresheet }}" type="application/pdf" width="100%" height="800px"/>
-        </div>
-      {% endif %} 
+      <button onclick="showFigureSheet()">View Figure Sheet</button>
+      <div id="figsheet" style="display:none">
+        <embed src="{{ page.figuresheet }}" type="application/pdf" width="100%" height="800px" />
+      </div>
+      {% endif %}
     </div>
     <!--If infographic exists, show pdfbutton-->
     {% if page.infographic %}
-      <div class="mb-3 text-center">
-        <button onclick="showinfographic()">View&ensp;Infographic</button>
-        <div id="infographic" style="display:none">
-          <embed src="{{ page.infographic }}" type="application/pdf" width="100%" height="800px"/>
-        </div>
+    <div class="mb-3 text-center">
+      <button onclick="showinfographic()">View&ensp;Infographic</button>
+      <div id="infographic" style="display:none">
+        <embed src="{{ page.infographic }}" type="application/pdf" width="100%" height="800px" />
       </div>
-    {% endif %} 
-  </article> 
+    </div>
+    {% endif %}
+  </article>
   <div class="post-nav">
     {% if page.next.url %}
-      <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Prev</a>
+    <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Prev</a>
     {% endif %}
     {% if page.previous.url %}
-      <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}">Next &raquo;</a>
+    <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}">Next &raquo;</a>
     {% endif %}
   </div>
 </div>
@@ -120,24 +85,24 @@ layout: default
     let front = ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
     let back = '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
     let title = '<div id="modelTitle" class="text-center"></div>';
-    let poweredBy ='<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
-    let ctrltip ='<p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>';
-    let download ='<div class="text-center"><a target="_blank" href="'+str+'"><button class="mb-5 btn btn-success">Download this Model</button></a></div>'
-    document.getElementById("viewerFrame").innerHTML = front + link + back + title + poweredBy+ctrltip+download;
+    let poweredBy = '<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
+    let ctrltip = '<p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>';
+    let download = '<div class="text-center"><a target="_blank" href="' + str + '"><button class="mb-5 btn btn-success">Download this Model</button></a></div>'
+    document.getElementById("viewerFrame").innerHTML = front + link + back + title + poweredBy + ctrltip + download;
   }
-  function currentModel(str){
-    let dp = '<p>Currently Showing: '+str+'</p>'
+  function currentModel(str) {
+    let dp = '<p>Currently Showing: ' + str + '</p>'
     document.getElementById("modelTitle").innerHTML = dp;
   }
-  function showFigureSheet(){
+  function showFigureSheet() {
     var x = document.getElementById("figsheet");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
-  } 
-  function showinfographic(){
+  }
+  function showinfographic() {
     var x = document.getElementById("infographic");
     if (x.style.display === "none") {
       x.style.display = "block";
