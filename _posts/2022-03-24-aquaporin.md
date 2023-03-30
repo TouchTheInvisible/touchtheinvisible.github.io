@@ -7,6 +7,8 @@ models:
   - name: AquaporinMonomer w/ Ribbon
     file: https://raw.githubusercontent.com/TouchTheInvisible/TouchTheInvisible.github.io/master/assets/models/4NEF-Aquaporin/4NEF-AquaporinMonomer_Ribbon.dae
 
+image: https://drive.google.com/file/d/1Ja-ThLb9zPqvOx1WV5tWRmWmCblq_Jem/preview
+
 figuresheet: https://touchtheinvisible.github.io/assets/figure_sheets/Aquaporin
   photosheet.pdf
 ---
