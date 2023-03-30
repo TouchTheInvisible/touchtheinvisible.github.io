@@ -19,7 +19,6 @@ modelfile5: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisibl
 modeltitle5: "Gramicidin Surface Model"
 
 image: https://drive.google.com/file/d/1fUluvfVrcCohD9ffXX0uZPFRlWJvW7ms/preview
-image-text: "Gramicidin Printed Out"
 
 figuresheet: /assets/figure_sheets/1NRM-Gramicidin_Photosheet.pdf
 infographic: /assets/infographics/Gramicidin_Infographics.pdf
