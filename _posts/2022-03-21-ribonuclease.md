@@ -15,7 +15,7 @@ models:
     - name: RNase Surface Model
       file: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisible.github.io/master/assets/models/1FS3-RibonucleaseA/1FS3-RibonucleaseA_Surface.dae
 
-
+image: https://drive.google.com/file/d/1K49SRs2-fcjPq6TgHBBCdSkweRYKDW_b/preview
 
 
 
