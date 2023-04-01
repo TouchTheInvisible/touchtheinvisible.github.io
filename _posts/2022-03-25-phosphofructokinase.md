@@ -6,6 +6,9 @@ preview: /assets/img/1PFK-Phosphofructokinase/1PFK-PhosphofructokinaseMonomer_Ri
 models:
     - name: PhosphofructokinaseMonomer Ribbon
       file: https://raw.githubusercontent.com/TouchTheInvisible/TouchTheInvisible.github.io/master/assets/models/1PFK-Phosphofructokinase/1PFK-PhosphofructokinaseMonomer_Ribbon.dae
+
+image: https://drive.google.com/file/d/14VsjKqz3NSntJ6eLu9OoTcWgpOAVfBg_/preview
+
 figuresheet: /assets/figure_sheets/1PFK-Phosphofructokinase_Photosheet.pdf
 infographic: /assets/infographics/PFK_Infographics.pdf
 ---
