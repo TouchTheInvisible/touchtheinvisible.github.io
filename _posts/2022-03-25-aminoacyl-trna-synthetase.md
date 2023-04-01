@@ -7,6 +7,8 @@ models:
     - name: Aminoacyl tRNA Synthetase - Ribbon With Glutamine
       file: https://raw.githubusercontent.com/TouchTheInvisible/TouchTheInvisible.github.io/master/assets/models/1EUQ%2B1GAX-Aminoacyl%20tRNA%20Synthetase/1EUQ-Glutaminyl%20tRNA%20Synthetase_RibbonWithGlutamine.dae
 
+image: https://drive.google.com/file/d/17l2eyGZSIxyLLTxyjJgZKpG1FZw2k7N7/preview
+
 figuresheet: /assets/figure_sheets/1EUQ_1GAX-Aminoacyl tRNA Synthetase_Photosheet.pdf
 infographic: /assets/infographics/tRNA synthetase_Infographics.pdf
 ---
