@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="post">
   <header class="post-header">
     <h1 class="post-title mb-5">{{ page.title }}</h1>
@@ -8,11 +9,17 @@ layout: default
   <article class="post-content">
     <!--If modelfile exists, show viewer-->
     <div class="text-center">
-      {% if page.models %}
-      {% if page.models[2] %}
+      {% if page.models %} {% if page.models[2] %}
       <div class="btn-group" role="group">
-        <button id="showmodels" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
-          aria-expanded="false">Select Model to Display</button>
+        <button
+          id="showmodels"
+          type="button"
+          class="btn btn-primary dropdown-toggle"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Select Model to Display
+        </button>
         <style>
           ul.dropdown-menu {
             font-size: 1.1em;
@@ -21,41 +28,68 @@ layout: default
         </style>
         <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
           {% for model in page.models%}
-          <a onclick="modelSelector('{{ model.file }}'); currentModel('{{ model.name }}');"
-            class="mb-2 dropdown-item">{{ model.name }}</a>
+          <a
+            onclick="modelSelector('{{ model.file }}'); currentModel('{{ model.name }}');"
+            class="mb-2 dropdown-item"
+            >{{ model.name }}</a
+          >
           {% endfor %}
         </ul>
       </div>
-      {% endif %}
-      {% endif %}
+      {% endif %} {% endif %}
     </div>
     <!-- Viewer Goes Here-->
     <div id="viewerFrame" class="iframe-container">
       <!--Default: Show Model 1-->
       {% if page.models %}
-      <iframe id="modelViewer" style="display:block; margin-top: 3em;"
-        src="https://3dviewer.net/embed.html#model={{ page.models[0].file }}" width="640" height="480"
-        style="border:1px solid #000;"></iframe>
-      <div id="modelTitle" class="text-center">Currently Showing: {{page.models[0].name}}</div>
-      <p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>
-      <p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>
-      <div class="text-center"><a target="_blank" href="{{ page.models[0].file }}"><button
-            class="mb-5 btn btn-success">Download this Model</button></a></div>
-      {% endif %}
-      {% if page.image %}
+      <iframe
+        id="modelViewer"
+        style="display: block; margin-top: 3em"
+        src="https://3dviewer.net/embed.html#model={{ page.models[0].file }}"
+        width="640"
+        height="480"
+        style="border: 1px solid #000"
+      ></iframe>
+      <div id="modelTitle" class="text-center">
+        Currently Showing: {{page.models[0].name}}
+      </div>
+      <p class="mb-2" style="font-size: 0.8em">
+        Powered by <a href="https://3dviewer.net/">Online3DViewer</a>
+      </p>
+      <p>
+        Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left
+        Click to Pan
+      </p>
       <div class="text-center">
-        <iframe src="{{ page.image }}" width="640" height="480" allow="autoplay"></iframe>
+        <a target="_blank" href="{{ page.models[0].file }}"
+          ><button class="mb-5 btn btn-success">Download this Model</button></a
+        >
       </div>
       {% endif %}
     </div>
+    {% if page.image %}
+    <div class="text-center mb-5">
+      <iframe
+        src="{{ page.image }}"
+        width="640"
+        height="480"
+        allow="autoplay"
+      ></iframe>
+    </div>
+    {% endif %}
     <!--markdown content-->
     {{ content }}
     <div class="text-center mb-3">
       <!--If figuresheet exists, show pdfbutton-->
       {% if page.figuresheet %}
       <button onclick="showFigureSheet()">View Figure Sheet</button>
-      <div id="figsheet" style="display:none">
-        <embed src="{{ page.figuresheet }}" type="application/pdf" width="100%" height="800px" />
+      <div id="figsheet" style="display: none">
+        <embed
+          src="{{ page.figuresheet }}"
+          type="application/pdf"
+          width="100%"
+          height="800px"
+        />
       </div>
       {% endif %}
     </div>
@@ -63,18 +97,26 @@ layout: default
     {% if page.infographic %}
     <div class="mb-3 text-center">
       <button onclick="showinfographic()">View&ensp;Infographic</button>
-      <div id="infographic" style="display:none">
-        <embed src="{{ page.infographic }}" type="application/pdf" width="100%" height="800px" />
+      <div id="infographic" style="display: none">
+        <embed
+          src="{{ page.infographic }}"
+          type="application/pdf"
+          width="100%"
+          height="800px"
+        />
       </div>
     </div>
     {% endif %}
   </article>
   <div class="post-nav">
     {% if page.next.url %}
-    <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Prev</a>
-    {% endif %}
-    {% if page.previous.url %}
-    <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}">Next &raquo;</a>
+    <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}"
+      >&laquo; Prev</a
+    >
+    {% endif %} {% if page.previous.url %}
+    <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}"
+      >Next &raquo;</a
+    >
     {% endif %}
   </div>
 </div>
@@ -82,16 +124,24 @@ layout: default
   function modelSelector(str) {
     let link = "https://3dviewer.net/embed.html#model=";
     link += str;
-    let front = ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
-    let back = '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
+    let front =
+      ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
+    let back =
+      '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
     let title = '<div id="modelTitle" class="text-center"></div>';
-    let poweredBy = '<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
-    let ctrltip = '<p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>';
-    let download = '<div class="text-center"><a target="_blank" href="' + str + '"><button class="mb-5 btn btn-success">Download this Model</button></a></div>'
-    document.getElementById("viewerFrame").innerHTML = front + link + back + title + poweredBy + ctrltip + download;
+    let poweredBy =
+      '<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
+    let ctrltip =
+      "<p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>";
+    let download =
+      '<div class="text-center"><a target="_blank" href="' +
+      str +
+      '"><button class="mb-5 btn btn-success">Download this Model</button></a></div>';
+    document.getElementById("viewerFrame").innerHTML =
+      front + link + back + title + poweredBy + ctrltip + download;
   }
   function currentModel(str) {
-    let dp = '<p>Currently Showing: ' + str + '</p>'
+    let dp = "<p>Currently Showing: " + str + "</p>";
     document.getElementById("modelTitle").innerHTML = dp;
   }
   function showFigureSheet() {
@@ -109,5 +159,5 @@ layout: default
     } else {
       x.style.display = "none";
     }
-  } 
+  }
 </script>
