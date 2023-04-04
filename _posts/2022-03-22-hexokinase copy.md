@@ -6,6 +6,9 @@ preview: /assets/img/3O8M+3O80-Hexokinase/3O80-Hexokinase_Ribbon.png
 models:
     - name: Hexokinase RibbonWithHBonds
       file: https://raw.githubusercontent.com/TouchTheInvisible/TouchTheInvisible.github.io/master/assets/models/Hexokinase/3O80-Hexokinase_RibbonWithHBonds.dae
+      
+    - name: HexokinaseWithGlucose RibbonWithHBonds
+      file: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisible.github.io/master/assets/models/Hexokinase/3O8M_HexokinaseWithGlucose_RibbonWithHBonds.dae
 
 image: https://drive.google.com/file/d/1_kQEt7bO8g5iP6-3lhnQkOG2_-8SvDRW/preview
 
