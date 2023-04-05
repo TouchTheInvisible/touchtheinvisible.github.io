@@ -12,6 +12,9 @@ Students likely do not have access to physical models outside of the classroom, 
 Infographics are a very good way to introduce each model. They offer a concise and easy way to digest the important points for each molecule so students can have a basic understanding of what they are working with.
 ## Videos
 Our videos offer additional ways to learn about each molecule, with each video featuring rotating models with additional educational information.
+
+[See videos here]({% link videos.md %})
+
 ## Physical Models
 Currently, our catalog of models includes the following:
 > + DNA
