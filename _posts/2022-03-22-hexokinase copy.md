@@ -10,6 +10,9 @@ models:
     - name: HexokinaseWithGlucose RibbonWithHBonds
       file: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisible.github.io/master/assets/models/Hexokinase/3O8M_HexokinaseWithGlucose_RibbonWithHBonds.dae
 
+    - name: HexokinaseWithGlucoseSurface RibbonWithHBonds
+      file: https://raw.githubusercontent.com/TouchTheInvisible/touchtheinvisible.github.io/master/assets/models/Hexokinase/3O8M_HexokinaseWithGlucose_RibbonWithHBonds_GlucoseSurface.dae
+
 image: https://drive.google.com/file/d/1_kQEt7bO8g5iP6-3lhnQkOG2_-8SvDRW/preview
 
 figuresheet: /assets/figure_sheets/3O8M_3O80-Hexokinase_Photosheet.pdf
