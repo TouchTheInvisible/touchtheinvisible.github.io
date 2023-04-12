@@ -33,11 +33,11 @@ Currently, our catalog of models includes the following:
 + Catabolite Activator Protein (CAP)
 + Zinc Finger Motif
 
+We are always looking to expand our catalog of models and library of educational resources, so let us know what you would like to see by leaving a message on our contact page.
+
 ## 3D Printing Manual
 [Access the manual here]({% link printing-manual.md %})
 
-
-We are always looking to expand our catalog of models and library of educational resources, so let us know what you would like to see by leaving a message on our contact page.
 ## Future Directions
 We are constantly looking to expand our catalog of models and our reach. If you are interested in getting involved with Touch the Invisible or looking to implement some of these models at your own university/school, please contact either Zuzana Swigonova at [zus3@pitt.edu](mailto:zus3@pitt.edu) or Richard Fang at [richardfang@pitt.edu](mailto:richardfang@pitt.edu).
 
