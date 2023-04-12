@@ -33,6 +33,9 @@ Currently, our catalog of models includes the following:
 + Catabolite Activator Protein (CAP)
 + Zinc Finger Motif
 
+## 3D Printing Manual
+[Access the manual here]({% link printing-manual.md %})
+
 
 We are always looking to expand our catalog of models and library of educational resources, so let us know what you would like to see by leaving a message on our contact page.
 ## Future Directions
