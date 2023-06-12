@@ -20,3 +20,11 @@ permalink: pretty
 
 collections:
   - people
+
+exclude:
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - README.md
+
+include:
+  - pages
