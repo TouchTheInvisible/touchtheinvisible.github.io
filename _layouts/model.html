@@ -2,162 +2,136 @@
 layout: default
 ---
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title mb-5">{{ page.title }}</h1>
-  </header>
-  <article class="post-content">
-    <!--If modelfile exists, show viewer-->
-    <div class="text-center">
-      {% if page.models %} {% if page.models[1] %}
-      <div class="btn-group" role="group">
-        <button
-          id="showmodels"
-          type="button"
-          class="btn btn-primary dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Select Model to Display
-        </button>
-        <style>
-          ul.dropdown-menu {
-            font-size: 1.1em;
-            cursor: pointer;
-          }
-        </style>
-        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-          {% for model in page.models%}
-          <a
-            onclick="modelSelector('{{ model.file }}'); currentModel('{{ model.name }}');"
-            class="mb-2 dropdown-item"
-            >{{ model.name }}</a
-          >
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %} {% endif %}
-    </div>
-    <!-- Viewer Goes Here-->
-    <div id="viewerFrame" class="iframe-container">
-      <!--Default: Show Model 1-->
-      {% if page.models %}
-      <iframe
-        id="modelViewer"
-        style="display: block; margin-top: 3em"
-        src="https://3dviewer.net/embed.html#model={{ page.models[0].file }}"
-        width="640"
-        height="480"
-        style="border: 1px solid #000"
-      ></iframe>
-      <div id="modelTitle" class="text-center">
-        Currently Showing: {{page.models[0].name}}
-      </div>
-      <p class="mb-2" style="font-size: 0.8em">
-        Powered by <a href="https://3dviewer.net/">Online3DViewer</a>
-      </p>
-      <p>
-        Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left
-        Click to Pan
-      </p>
-      <div class="text-center">
-        <a target="_blank" href="{{ page.models[0].file }}"
-          ><button class="mb-5 btn btn-success">Download this Model</button></a
-        >
-      </div>
-      {% endif %}
-    </div>
-    {% if page.image %}
-    <div class="text-center mb-5">
-      <iframe
-        src="{{ page.image }}"
-        width="640"
-        height="480"
-        allow="autoplay"
-      ></iframe>
-    </div>
-    {% endif %}
-    <!--markdown content-->
-    {{ content }}
-    <div class="text-center mb-3">
-      <!--If figuresheet exists, show pdfbutton-->
-      {% if page.figuresheet %}
-      <button onclick="showFigureSheet()">View Figure Sheet</button>
-      <div id="figsheet" style="display: none">
-        <embed
-          src="{{ page.figuresheet }}"
-          type="application/pdf"
-          width="100%"
-          height="800px"
-        />
-      </div>
-      {% endif %}
-    </div>
-    <!--If infographic exists, show pdfbutton-->
-    {% if page.infographic %}
-    <div class="mb-3 text-center">
-      <button onclick="showinfographic()">View&ensp;Infographic</button>
-      <div id="infographic" style="display: none">
-        <embed
-          src="{{ page.infographic }}"
-          type="application/pdf"
-          width="100%"
-          height="800px"
-        />
-      </div>
-    </div>
-    {% endif %}
-  </article>
-  <div class="post-nav">
-    {% if page.next.url %}
-    <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}"
-      >&laquo; Prev</a
-    >
-    {% endif %} {% if page.previous.url %}
-    <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}"
-      >Next &raquo;</a
-    >
-    {% endif %}
-  </div>
+<h2>{{ page.title }}</h2>
+
+<!--If modelfile exists, show viewer-->
+<div class="text-center">
+	{% if page.models %}
+	{% if page.models[1] %}
+	<div class="btn-group" role="group">
+		<button id="showmodels" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+			aria-expanded="false">
+			Select Model to Display
+		</button>
+		<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+			{% for model in page.models%}
+			<a onclick="modelSelector('{{ model.file }}'); currentModel('{{ model.name }}');"
+				class="mb-2 dropdown-item">
+				{{ model.name }}
+			</a>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
+	{% endif %}
 </div>
+<!-- Viewer Goes Here-->
+<div id="viewerFrame" class="iframe-container">
+	<!--Default: Show Model 1-->
+	{% if page.models %}
+	<iframe id="modelViewer" style="display: block; margin-top: 3em"
+		src="https://3dviewer.net/embed.html#model={{ page.models[0].file }}" width="640" height="480"
+		style="border: 1px solid #000"></iframe>
+	<div id="modelTitle" class="text-center">
+		Currently Showing: {{page.models[0].name}}
+	</div>
+	<p class="mb-2">
+		Powered by <a href="https://3dviewer.net/">Online3DViewer</a>
+	</p>
+	<p>
+		Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left
+		Click to Pan
+	</p>
+	<div class="text-center">
+		<a class="btn btn-success mb-3" target="_blank" href="{{ page.models[0].file }}">
+			Download this Model
+		</a>
+	</div>
+	{% endif %}
+</div>
+{% if page.image %}
+<div class="text-center mb-5">
+	<iframe src="{{ page.image }}" width="640" height="480" allow="autoplay"></iframe>
+</div>
+{% endif %}
+<!--markdown content-->
+{{ content }}
+
+<!--If figuresheet exists, show pdfbutton-->
+{% if page.figuresheet %}
+<div class="text-center mb-3">
+	<button onclick="showFigureSheet()">View Figure Sheet</button>
+	<div id="figsheet" style="display: none">
+		<embed src="{{ page.figuresheet }}" type="application/pdf" width="100%" height="800px" />
+	</div>
+</div>
+{% endif %}
+<!--If infographic exists, show pdfbutton-->
+{% if page.infographic %}
+<div class="mb-3 text-center">
+	<button onclick="showinfographic()">View&ensp;Infographic</button>
+	<div id="infographic" style="display: none">
+		<embed src="{{ page.infographic }}" type="application/pdf" width="100%" height="800px" />
+	</div>
+</div>
+{% endif %}
+
+
+<div class="text-center">
+	{% if page.next.url %}
+	<a class="mx-3" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Prev</a>
+	{% endif %} {% if page.previous.url %}
+	<a class="mx-3" href="{{ page.previous.url | prepend: site.baseurl }}">Next &raquo;</a>
+	{% endif %}
+</div>
+
+
+
 <script>
-  function modelSelector(str) {
-    let link = "https://3dviewer.net/embed.html#model=";
-    link += str;
-    let front =
-      ' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
-    let back =
-      '" width="640" height="480" style="border:1px solid #000;" ></iframe>';
-    let title = '<div id="modelTitle" class="text-center"></div>';
-    let poweredBy =
-      '<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
-    let ctrltip =
-      "<p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>";
-    let download =
-      '<div class="text-center"><a target="_blank" href="' +
-      str +
-      '"><button class="mb-5 btn btn-success">Download this Model</button></a></div>';
-    document.getElementById("viewerFrame").innerHTML =
-      front + link + back + title + poweredBy + ctrltip + download;
-  }
-  function currentModel(str) {
-    let dp = "<p>Currently Showing: " + str + "</p>";
-    document.getElementById("modelTitle").innerHTML = dp;
-  }
-  function showFigureSheet() {
-    var x = document.getElementById("figsheet");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-  function showinfographic() {
-    var x = document.getElementById("infographic");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+	function modelSelector(str) {
+		let link = "https://3dviewer.net/embed.html#model=";
+		link += str;
+		let front =
+			' <iframe id="modelViewer" style="display:block; margin-top: 3em;" src="';
+		let back =
+			'" width="640" height="480" style="border:1px solid #000;" ></iframe>';
+		let title = '<div id="modelTitle" class="text-center"></div>';
+		let poweredBy =
+			'<p class="mb-2" style="font-size: 0.8em">Powered by <a href="https://3dviewer.net/">Online3DViewer</a></p>';
+		let ctrltip =
+			"<p>Use Scroll Wheel to Zoom In and Out, Right Click to Rotate, and Left Click to Pan</p>";
+		let download =
+			'<div class="text-center"><a target="_blank" href="' +
+			str +
+			'"><button class="mb-5 btn btn-success">Download this Model</button></a></div>';
+		document.getElementById("viewerFrame").innerHTML =
+			front + link + back + title + poweredBy + ctrltip + download;
+	}
+	function currentModel(str) {
+		let dp = "<p>Currently Showing: " + str + "</p>";
+		document.getElementById("modelTitle").innerHTML = dp;
+	}
+	function showFigureSheet() {
+		var x = document.getElementById("figsheet");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
+	function showinfographic() {
+		var x = document.getElementById("infographic");
+		if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}
+	}
 </script>
+
+<style>
+	ul.dropdown-menu {
+		font-size: 1.1em;
+		cursor: pointer;
+	}
+</style>

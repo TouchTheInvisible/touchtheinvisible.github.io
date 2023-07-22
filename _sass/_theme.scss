@@ -1,0 +1,55 @@
+/**********
+ * Colors *
+ **********/
+$color-initial: #fff !default;
+$color-primary: #FFB81C !default;
+$pitt-gold: #ffb81c;
+$color-secondary: #606c76 !default;
+$color-tertiary: #f4f5f6 !default;
+$color-quaternary: #d1d1d1 !default;
+$color-quinary: #e1e1e1 !default;
+$pitt-blue: #003594;
+$pitt-grey: #2b2b2b;
+$pitt-orange: #FC0;
+$pitt-navy: #1C2957;
+$pitt-light-grey: #e8e9ee;
+
+.container {
+    margin: 0 auto;
+    max-width: 80rem;
+    padding: 0 2.0rem;
+    position: relative;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.model-preview {
+    padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid $color-initial;
+
+    &:hover {
+        border: 1px solid $grey-color-light;
+    }
+}
+
+blockquote {
+    border-left: .3rem solid $color-quaternary;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1rem 1.5rem;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@import "header",
+"typography",
+"footer",
+"buttons",
+"forms"
+;
