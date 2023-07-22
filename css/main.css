@@ -1,0 +1,337 @@
+/**********
+ * Colors *
+ **********/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Rubik:700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bentham&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+.container {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 2rem;
+  position: relative;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.model-preview {
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+}
+.model-preview:hover {
+  border: 1px solid #e8e8e8;
+}
+
+blockquote {
+  border-left: 0.3rem solid #d1d1d1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 1rem 1.5rem;
+}
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+.bg-pitt {
+  background: url(../assets/img/bg_header.png) no-repeat center center #003594;
+  background-size: auto;
+  background-size: cover;
+}
+
+/**
+ * Import fonts from Google
+ */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.42857143;
+  font-size: 16px;
+  font-family: "Georgia", serif;
+}
+
+.fs-double {
+  font-size: 2em;
+}
+
+.ff-cinzel {
+  font-family: "Cinzel", serif;
+}
+
+a {
+  color: #ffb81c;
+  text-decoration: none;
+}
+a:focus, a:hover {
+  color: #606c76;
+}
+
+.h1,
+h1 {
+  line-height: 1.2;
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  margin-top: 0;
+}
+
+.h2,
+h2 {
+  line-height: 1.25;
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "DM Serif Display", serif;
+}
+
+.h3,
+h3 {
+  line-height: 1.3;
+  font-size: 1.8rem;
+  margin: 50px 0 25px;
+  font-weight: 700;
+  font-family: "DM Serif Display", serif;
+}
+
+.h4,
+h4 {
+  letter-spacing: -0.08rem;
+  line-height: 1.35;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-family: "DM Serif Display", serif;
+  margin: 30px 0 15px;
+}
+
+.h5,
+h5 {
+  font-size: 1.8rem;
+  letter-spacing: -0.05rem;
+  font-family: "DM Serif Display", serif;
+  line-height: 1.5;
+}
+
+.h6,
+h6 {
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 1.4;
+  font-family: "DM Serif Display", serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #2b2b2b;
+  color: #fff;
+  padding: 35px 0;
+  position: sticky;
+  top: 0;
+  font-size: 1.25rem;
+}
+
+.button,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  background-color: #ffb81c;
+  border: 0.1rem solid #ffb81c;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 3.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 3.8rem;
+  padding: 0 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.button:focus, .button:hover,
+button:focus,
+button:hover,
+input[type=button]:focus,
+input[type=button]:hover,
+input[type=reset]:focus,
+input[type=reset]:hover,
+input[type=submit]:focus,
+input[type=submit]:hover {
+  background-color: #2b2b2b;
+  border-color: #2b2b2b;
+  color: #fff;
+  outline: 0;
+}
+.button[disabled],
+button[disabled],
+input[type=button][disabled],
+input[type=reset][disabled],
+input[type=submit][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button[disabled]:focus, .button[disabled]:hover,
+button[disabled]:focus,
+button[disabled]:hover,
+input[type=button][disabled]:focus,
+input[type=button][disabled]:hover,
+input[type=reset][disabled]:focus,
+input[type=reset][disabled]:hover,
+input[type=submit][disabled]:focus,
+input[type=submit][disabled]:hover {
+  background-color: #ffb81c;
+  border-color: #ffb81c;
+}
+.button.button-outline,
+button.button-outline,
+input[type=button].button-outline,
+input[type=reset].button-outline,
+input[type=submit].button-outline {
+  background-color: transparent;
+  color: #ffb81c;
+}
+.button.button-outline:focus, .button.button-outline:hover,
+button.button-outline:focus,
+button.button-outline:hover,
+input[type=button].button-outline:focus,
+input[type=button].button-outline:hover,
+input[type=reset].button-outline:focus,
+input[type=reset].button-outline:hover,
+input[type=submit].button-outline:focus,
+input[type=submit].button-outline:hover {
+  background-color: transparent;
+  border-color: #2b2b2b;
+  color: #2b2b2b;
+}
+.button.button-outline[disabled]:focus, .button.button-outline[disabled]:hover,
+button.button-outline[disabled]:focus,
+button.button-outline[disabled]:hover,
+input[type=button].button-outline[disabled]:focus,
+input[type=button].button-outline[disabled]:hover,
+input[type=reset].button-outline[disabled]:focus,
+input[type=reset].button-outline[disabled]:hover,
+input[type=submit].button-outline[disabled]:focus,
+input[type=submit].button-outline[disabled]:hover {
+  border-color: inherit;
+  color: #ffb81c;
+}
+.button.button-clear,
+button.button-clear,
+input[type=button].button-clear,
+input[type=reset].button-clear,
+input[type=submit].button-clear {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffb81c;
+}
+.button.button-clear:focus, .button.button-clear:hover,
+button.button-clear:focus,
+button.button-clear:hover,
+input[type=button].button-clear:focus,
+input[type=button].button-clear:hover,
+input[type=reset].button-clear:focus,
+input[type=reset].button-clear:hover,
+input[type=submit].button-clear:focus,
+input[type=submit].button-clear:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #2b2b2b;
+}
+.button.button-clear[disabled]:focus, .button.button-clear[disabled]:hover,
+button.button-clear[disabled]:focus,
+button.button-clear[disabled]:hover,
+input[type=button].button-clear[disabled]:focus,
+input[type=button].button-clear[disabled]:hover,
+input[type=reset].button-clear[disabled]:focus,
+input[type=reset].button-clear[disabled]:hover,
+input[type=submit].button-clear[disabled]:focus,
+input[type=submit].button-clear[disabled]:hover {
+  color: #ffb81c;
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+textarea,
+select {
+  appearance: none;
+  background-color: transparent;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 3.8rem;
+  padding: 0.6rem 1rem;
+  width: 100%;
+}
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=url]:focus,
+textarea:focus,
+select:focus {
+  border-color: #FFB81C;
+  outline: 0;
+}
+
+select {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
+  padding-right: 3rem;
+}
+select:focus {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="14" viewBox="0 0 29 14" width="29"><path fill="#9b4dca" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>');
+}
+
+textarea {
+  min-height: 6.5rem;
+}
+
+label,
+legend {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  display: inline;
+}
+
+.label-inline {
+  display: inline-block;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
