@@ -6,21 +6,24 @@ permalink: /people/
 
 {% assign ordered_pages = site.people | sort:"order" %}
 {% for post in ordered_pages %}
-{% cycle 'add row' : '<div class="row">', '', '' %}
-    <div class="column column-33">
-        <div class="profile mb-3">
-            <img class="rounded mb-0 " src="{{ post.photo }}" width="200px" height="200 px"
-                style="overflow: hidden; object-fit: cover; {{ post.adjustment }}">
-            <h3 class="mt-0 mb-0">{{ post.name }}</h3>
-            <p class="mb-0">{{ post.title }}</p>
-            <p class="mb-0"><a href="mailto:{{ post.email }}">{{ post.email }}</a>
-            </p>
-            {% if post.profile %}
-            <p class="mb-0"><a href="http://{{ post.profile }}">Profile</a></p>
-            {% endif %}
-            {% if post.website %}
-            <p><a href="http://{{ post.website }}">Personal Webiste</a></p>
-            {% endif %}
+{% cycle 'add row' : '<div class="row mb-3">', '', '' %}
+    <div class="col-4 d-flex">
+        <div class="card w-100 shadow">
+            <img src="{{ post.photo }}" style="height: 18rem; object-fit: cover; {{ post.adjustment }}"
+                class="card-img-top w-100" alt="{{ post.name }}">
+            <div class="card-body">
+                <h3 class="my-0">{{ post.name }}</h3>
+                <p class="my-0">{{ post.title }}</p>
+                <p class="my-0"><a href="mailto:{{ post.email }}">{{ post.email }}</a></p>
+                <p class="my-0">
+                    {% if post.profile %}
+                    <a class="btn btn-primary" href="http://{{ post.profile }}">Profile</a>
+                    {% endif %}
+                    {% if post.website %}
+                    <a class="btn btn-primary" href="http://{{ post.website }}">Personal Website</a>
+                    {% endif %}
+                </p>
+            </div>
         </div>
     </div>
     {% cycle 'end row' : '', '', '
